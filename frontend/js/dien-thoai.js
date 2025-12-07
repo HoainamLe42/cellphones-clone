@@ -1,4 +1,3 @@
-import { handleProductClick } from './common.js';
 import { renderSidebar } from './components/MenuItem.js';
 import { renderProductCard } from './components/ProductCard.js';
 
