@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Trang chủ - CellphoneS Clone</title>
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="./assets/css/main.css" />
+
+        <!-- Font-awesome -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+            integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+    </head>
+    <body class="has-dropdown-menu">
+        <header id="header" class="header">
+            <div class="container">
+                <div class="header__top">
+                    <div class="header__top--left">COntent left</div>
+                    <div class="header__top--right">
+                        <a href="#!">Cửa hàng gần bạn</a>
+                        <a href="#!">Tra cứu đơn hàng</a>
+                        <a href="#!">1900 1560</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- BOTTOM -->
+            <div class="container">
+                <div class="header__bottom">
+                    <a href="/" class="logo">cellphone</a>
+                    <button id="header-menu">
+                        <i class="fa-solid fa-bars"></i>
+                        Danh mục
+                        <i class="fa-solid fa-angle-down"></i>
+                    </button>
+                    <button>
+                        <i class="fa-solid fa-location-dot"></i>
+                        Hồ Chí Minh
+                        <i class="fa-solid fa-angle-down"></i>
+                    </button>
+                    <div class="header__search">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input
+                            type="text"
+                            placeholder="Bạn muốn mua gì hôm nay?"
+                        />
+                    </div>
+
+                    <button class="header__cart">
+                        Giỏ hàng
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </button>
+
+                    <button>
+                        Đăng nhập
+                        <i class="fa-regular fa-circle-user"></i>
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <main id="page-content" class="phones">
+            <div class="container">
+                <nav class="breadcrumb">
+                    <ul class="breadcrumb-list">
+                        <li><a href="/">Trang chủ</a></li>
+                        <span>/</span>
+                        <li>
+                            <a href="/dien-thoai.html">Điện thoại</a>
+                        </li>
+                        <span>/</span>
+                        <li>
+                            <a class="active" href="/dien-thoai-iphone.html">iPhone</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="phones-filter">
+                    <h2 class="heading-h2">Điện Thoại iPhone</h2>
+
+                    <!-- List filter -->
+                    <ul class="phones-filter__list">
+                        <li><a href="#!">iPhone 17 Series</a></li>
+                        <li><a href="#!">iPhone Air</a></li>
+                        <li><a href="#!">iPhone 16 Series</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="phones-body">
+                <div class="container">
+                    <div class="phones-body__wrapper">
+                        <!-- Filter -->
+                        <div class="phones-body__filter">
+                            <p>Sắp xếp theo:</p>
+                            <ul>
+                                <li class="active">Nổi bật</li>
+                                <li>Giảm nhiều</li>
+                                <li>Xem nhiều</li>
+                                <li>Giá</li>
+                            </ul>
+                        </div>
+
+                        <!-- Phones -->
+                        <div
+                            class="phones-body__items"
+                            id="iphones-body__items"
+                        ></div>
+
+                        <!-- Button -->
+                        <div class="button-view-more">
+                            <button>Xem thêm 293 sản phẩm</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom -->
+            <section class="phones-bottom"></section>
+        </main>
+
+        <footer id="footer" class="footer">
+            <div class="container">
+                <div class="footer__top">
+                    <div>
+                        <a href="#!">iPhone Air</a>
+                        <a href="#!">iPhone 17</a>
+                        <a href="#!">iPhone 17 Pro</a>
+                        <br />
+                        <a href="#!">Giá iPhone 17 Pro Max</a>
+                        <br />
+                        <a href="#!">iPhone 16</a>
+                        <a href="#!">iPhone 16 Pro Max</a>
+                    </div>
+                    <div>
+                        <a href="#!">Điện thoại</a>
+                        <a href="#!">Điện thoại iPhone</a>
+                        <a href="#!">Xiaomi</a>
+                        <br />
+                        <a href="#!">Điện thoại Samsung Galaxy</a>
+                        <a href="#!">Điện thoại OPPO</a>
+                    </div>
+                    <div>
+                        <a href="#!">Điện thoại</a>
+                        <a href="#!">Điện thoại iPhone</a>
+                        <a href="#!">Xiaomi</a>
+                        <br />
+                        <a href="#!">Điện thoại Samsung Galaxy</a>
+                        <a href="#!">Điện thoại OPPO</a>
+                    </div>
+                    <div>
+                        <a href="#!">Điện thoại</a>
+                        <a href="#!">Điện thoại iPhone</a>
+                        <a href="#!">Xiaomi</a>
+                        <br />
+                        <a href="#!">Điện thoại Samsung Galaxy</a>
+                        <a href="#!">Điện thoại OPPO</a>
+                    </div>
+                </div>
+
+                <p class="footer__bottom">
+                    Công ty TNHH Thương Mại và Dịch Vụ Kỹ Thuật DIỆU PHÚC -
+                    GPĐKKD: 0316172372 cấp tại Sở KH & ĐT TP. HCM. Địa chỉ văn
+                    phòng: 350-352 Võ Văn Kiệt, Phường Cầu Ông Lãnh, Thành phố
+                    Hồ Chí Minh, Việt Nam. Điện thoại: 028.7108.9666.
+                </p>
+            </div>
+        </footer>
+
+        <!-- Button scroll top -->
+        <div id="scroll-to-top">
+            <i class="fa-solid fa-angle-up"></i>
+            Lên đầu
+        </div>
+
+        <!-- Sidebar -->
+        <div class="container">
+            <div id="sidebar" class="sidebar hidden">
+                <ul class="sidebar-list"></ul>
+            </div>
+        </div>
+        <div class="overlay"></div>
+
+        <script src="./js/dien-thoai-iphone.js" type="module"></script>
+        <script src="./js/common.js" type="module"></script>
+    </body>
+</html>

@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Thanh toán - Cellphones</title>
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="./assets/css/main.css" />
+
+        <!-- Font-awesome -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+            integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+    </head>
+    <body class="has-dropdown-menu">
+        <!-- Header -->
+        <header id="header" class="header">
+            <div class="container">
+                <div class="header__top">
+                    <div class="header__top--left">COntent left</div>
+                    <div class="header__top--right">
+                        <a href="#!">Cửa hàng gần bạn</a>
+                        <a href="#!">Tra cứu đơn hàng</a>
+                        <a href="#!">1900 1560</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- BOTTOM -->
+            <div class="container">
+                <div class="header__bottom">
+                    <a href="/" class="logo">cellphone</a>
+                    <button id="header-menu">
+                        <i class="fa-solid fa-bars"></i>
+                        Danh mục
+                        <i class="fa-solid fa-angle-down"></i>
+                    </button>
+                    <button>
+                        <i class="fa-solid fa-location-dot"></i>
+                        Hồ Chí Minh
+                        <i class="fa-solid fa-angle-down"></i>
+                    </button>
+                    <div class="header__search">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input
+                            type="text"
+                            placeholder="Bạn muốn mua gì hôm nay?"
+                        />
+                    </div>
+
+                    <button class="header__cart">
+                        Giỏ hàng
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </button>
+
+                    <button>
+                        Đăng nhập
+                        <i class="fa-regular fa-circle-user"></i>
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main -->
+        <main id="page-content" class="checkout">
+            <div class="container">
+                <div class="checkout__wrapper">
+                    <a href="/" class="checkout__nav"
+                        >< Tiếp tục mua hàng</a
+                    >
+
+                    <div class="checkout-cart">
+                        <div class="checkout-cart__img">
+                            <img
+                                src="./assets/images/phones/iphone-16-pro-pro-max.avif"
+                                alt=""
+                                loading="lazy"
+                            />
+                        </div>
+                        <div class="checkout-cart__info">
+                            <p class="name">
+                                APPLE IPHONE 17 PRO MAX 256GB (CTY) - Cam Vũ Trụ
+                                - New
+                            </p>
+                            <span class="price">74.980.000 đ</span>
+
+                            <div class="checkout-cart__info-group">
+                                <div class="quantity-action">
+                                    <button class="quantity-button">-</button>
+                                    <input type="text" disabled value="2" />
+                                    <button class="quantity-button">+</button>
+                                </div>
+                                <button class="remove-button">
+                                    <i class="fa-regular fa-trash-can"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <form>
+                        <p class="title">THÔNG TIN KHÁCH HÀNG</p>
+
+                        <div class="select-radio">
+                            <label for="he">
+                                <input type="radio" id="he" name="people" />
+                                Anh
+                            </label>
+                            <label for="she">
+                                <input type="radio" id="she" name="people" />
+                                Chị
+                            </label>
+                        </div>
+
+                        <div class="group__wrapper">
+                            <div class="group">
+                                <label>Họ và tên <span>*</span></label>
+                                <input
+                                    type="text"
+                                    required
+                                    placeholder="Nhập họ và tên"
+                                />
+                            </div>
+                            <div class="group">
+                                <label>Số điện thoại <span>*</span></label>
+                                <input
+                                    type="text"
+                                    required
+                                    placeholder="Số điện thoại"
+                                />
+                            </div>
+                        </div>
+
+                        <div class="line"></div>
+
+                        <p class="title">HÌNH THỨC GIAO HÀNG</p>
+
+                        <div class="select-radio">
+                            <label for="home">
+                                <input type="radio" id="home" name="delivery" />
+                                Giao hàng tận nơi
+                            </label>
+                            <label for="store">
+                                <input
+                                    type="radio"
+                                    id="store"
+                                    name="delivery"
+                                />
+                                Nhận hàng tại cửa hàng
+                            </label>
+                        </div>
+
+                        <div class="group__wrapper">
+                            <div class="group">
+                                <label for="">Tỉnh thành <span>*</span></label>
+                                <input type="text" required />
+                            </div>
+                            <div class="group">
+                                <label for="">Phường xã <span>*</span></label>
+                                <input type="text" required />
+                            </div>
+                        </div>
+
+                        <div class="group">
+                            <label for=""
+                                >Tên đường số nhà <span>*</span></label
+                            >
+                            <input type="text" required />
+                        </div>
+
+                        <div class="group">
+                            <p>Yêu cầu khác (nếu có)</p>
+                            <textarea placeholder="Nhập yêu cầu"></textarea>
+                        </div>
+
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="call" />
+                            <label for="call"
+                                >Gọi người khác nhận hàng (Nếu có)</label
+                            >
+                        </div>
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="bill" />
+                            <label for="bill">Xuất hóa đơn công ty</label>
+                        </div>
+
+                        <div class="line"></div>
+
+                        <p class="title">PHƯƠNG THỨC THANH TOÁN</p>
+
+                        <div class="payment-method">
+                            <span>Chọn phương thức thanh toán</span>
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </div>
+
+                        <!-- Total price -->
+                        <div class="total-price">
+                            <p class="title">CHI TIẾT THANH TOÁN</p>
+                            <div class="group">
+                                <p>Tiền hàng:</p>
+                                <span>74.980.000 đ</span>
+                            </div>
+                            <div class="group">
+                                <p>Phí vận chuyển:</p>
+                                <span>Miễn phí</span>
+                            </div>
+                            <div class="group">
+                                <p>Khuyến mãi:</p>
+                                <span>0 đ</span>
+                            </div>
+
+                            <div class="coupon">
+                                <input
+                                    type="text"
+                                    placeholder="Nhập mã khuyến mãi"
+                                />
+                                <button class="apply-button">Áp dụng</button>
+                            </div>
+
+                            <div class="line"></div>
+
+                            <div class="group">
+                                <p>Tổng cộng:</p>
+                                <span class="total"> 74.980.000 đ</span>
+                            </div>
+                        </div>
+
+                        <div class="checkout__bottom">
+                            <p>
+                                <i class="fa-regular fa-circle-check"></i>
+                                Bằng việc tiến hành đặt mua hàng, bạn đồng ý với
+                                <b>Điều khoản sử dụng</b> và
+                                <b>Chính sách xử lý dữ liệu cá nhân</b> của Di
+                                Động Việt.
+                            </p>
+
+                            <button type="submit" class="button-submit">
+                                Thanh toán
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer id="footer" class="footer">
+            <div class="container">
+                <div class="footer__top">
+                    <div>
+                        <a href="#!">iPhone Air</a>
+                        <a href="#!">iPhone 17</a>
+                        <a href="#!">iPhone 17 Pro</a>
+                        <br />
+                        <a href="#!">Giá iPhone 17 Pro Max</a>
+                        <br />
+                        <a href="#!">iPhone 16</a>
+                        <a href="#!">iPhone 16 Pro Max</a>
+                    </div>
+                    <div>
+                        <a href="#!">Điện thoại</a>
+                        <a href="#!">Điện thoại iPhone</a>
+                        <a href="#!">Xiaomi</a>
+                        <br />
+                        <a href="#!">Điện thoại Samsung Galaxy</a>
+                        <a href="#!">Điện thoại OPPO</a>
+                    </div>
+                    <div>
+                        <a href="#!">Điện thoại</a>
+                        <a href="#!">Điện thoại iPhone</a>
+                        <a href="#!">Xiaomi</a>
+                        <br />
+                        <a href="#!">Điện thoại Samsung Galaxy</a>
+                        <a href="#!">Điện thoại OPPO</a>
+                    </div>
+                    <div>
+                        <a href="#!">Điện thoại</a>
+                        <a href="#!">Điện thoại iPhone</a>
+                        <a href="#!">Xiaomi</a>
+                        <br />
+                        <a href="#!">Điện thoại Samsung Galaxy</a>
+                        <a href="#!">Điện thoại OPPO</a>
+                    </div>
+                </div>
+
+                <p class="footer__bottom">
+                    Công ty TNHH Thương Mại và Dịch Vụ Kỹ Thuật DIỆU PHÚC -
+                    GPĐKKD: 0316172372 cấp tại Sở KH & ĐT TP. HCM. Địa chỉ văn
+                    phòng: 350-352 Võ Văn Kiệt, Phường Cầu Ông Lãnh, Thành phố
+                    Hồ Chí Minh, Việt Nam. Điện thoại: 028.7108.9666.
+                </p>
+            </div>
+        </footer>
+        <!-- Button scroll top -->
+        <div id="scroll-to-top">
+            <i class="fa-solid fa-angle-up"></i>
+            Lên đầu
+        </div>
+
+        <!-- Sidebar -->
+        <div class="container">
+            <div id="sidebar" class="sidebar hidden">
+                <ul class="sidebar-list"></ul>
+            </div>
+        </div>
+        <div class="overlay"></div>
+
+        <script src="./js/product-detail.js" type="module"></script>
+        <script src="./js/common.js" type="module"></script>
+    </body>
+</html>
