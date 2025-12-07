@@ -1,0 +1,19 @@
+.breadcrumb {
+    margin-bottom: 10px;
+
+    &-list {
+        display: flex;
+        gap: 10px;
+    }
+
+    li a:hover {
+        text-decoration: underline;
+    }
+
+    li a.active {
+        color: $primary-color;
+        font-weight: 500;
+        user-select: none;
+        pointer-events: none;
+    }
+}

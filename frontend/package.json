@@ -1,0 +1,28 @@
+{
+    "name": "html-css-js-project",
+    "version": "1.0.0",
+    "description": "Project thuần HTML, SCSS và JavaScript với JSON Server",
+    "main": "index.html",
+    "scripts": {
+        "scss": "sass --watch assets/scss/main.scss assets/css/main.css",
+        "scss:watch": "sass src/scss:dist/css --no-source-map --watch",
+        "scss:min": "sass src/scss:dist/css --no-source-map --style=compressed",
+        "prefix": "postcss dist/css/*.css --use autoprefixer -b \"last 4 versions\" --replace",
+        "build:css": "npm run scss:min && npm run prefix",
+        "server": "json-server --watch data/db.json --port 8000",
+        "dev": "concurrently \"npm run scss:watch\" \"npm run server\" \"live-server dist\"",
+        "start": "npm run dev"
+    },
+    "keywords": [],
+    "author": "Bạn <your-email@gmail.com>",
+    "license": "MIT",
+    "devDependencies": {
+        "autoprefixer": "^10.4.20",
+        "concurrently": "^9.0.1",
+        "json-server": "^1.0.0-beta.3",
+        "live-server": "^1.2.2",
+        "postcss": "^8.4.47",
+        "postcss-cli": "^11.0.0",
+        "sass": "^1.80.4"
+    }
+}

@@ -1,0 +1,267 @@
+{
+    "products": [
+        {
+            "id": 1000,
+            "name": "iPhone 17 Pro Max 256GB Chính Hãng",
+            "slug": "iphone-17-pro-max-256gb",
+            "category": "dien-thoai",
+            "brand": "iPhone",
+            "price": 34990000,
+            "sale_price": 31990000,
+            "price_formatted": "37.790.000đ",
+            "sale_price_formatted": "37.990.000đ",
+            "image": "./assets/images/phones/iphone-17-pro-pro-max.avif",
+            "in_stock": true,
+            "featured": true,
+            "badge": "Mới",
+            "rating": 4.9,
+            "review_count": 128,
+            "colors": [
+                {
+                    "name": "Bạc",
+                    "image": "./assets/images/phones/iphone-17-pro-pro-max.avif",
+                    "active": false
+                },
+                {
+                    "name": "Đen",
+                    "image": "./assets/images/phones/iphone-14-pro-pro-max.webp",
+                    "active": true
+                }
+            ]
+        },
+        {
+            "id": 1001,
+            "name": "iPhone 17 Pro 256GB Chính Hãng",
+            "slug": "iphone-17-pro-max-256gb",
+            "category": "dien-thoai",
+            "brand": "iPhone",
+            "price": 34990000,
+            "sale_price": 34490000,
+            "price_formatted": "34.990.000đ",
+            "sale_price_formatted": "34.490.000đ",
+            "image": "./assets/images/phones/iphone-17-pro-pro-max.avif",
+            "in_stock": true,
+            "featured": true,
+            "badge": "Mới",
+            "rating": 4.9,
+            "review_count": 128,
+            "colors": [
+                {
+                    "name": "Tím",
+                    "image": "./assets/images/phones/iphone-17-pro-pro-max.avif",
+                    "active": false
+                }
+            ]
+        },
+        {
+            "id": 1002,
+            "name": "iPhone Air 256GB Chính Hãng",
+            "slug": "iphone",
+            "category": "dien-thoai",
+            "brand": "iPhone",
+            "price": 34990000,
+            "sale_price": 34490000,
+            "price_formatted": "34.990.000đ",
+            "sale_price_formatted": "34.490.000đ",
+            "image": "./assets/images/phones/iphone-air.avif",
+            "in_stock": true,
+            "featured": true,
+            "badge": "Mới",
+            "rating": 4.9,
+            "review_count": 128,
+            "colors": [
+                {
+                    "name": "Tím",
+                    "image": "./assets/images/phones/iphone-17-pro-pro-max.avif",
+                    "active": false
+                }
+            ]
+        },
+        {
+            "id": 1003,
+            "name": "iPhone 16 Pro Max 256GB Chính Hãng",
+            "slug": "iphone",
+            "category": "dien-thoai",
+            "brand": "iPhone",
+            "price": 34990000,
+            "sale_price": 34490000,
+            "price_formatted": "34.990.000đ",
+            "sale_price_formatted": "34.490.000đ",
+            "image": "./assets/images/phones/iphone-16-pro-pro-max.avif",
+            "in_stock": true,
+            "featured": true,
+            "badge": "Mới",
+            "rating": 4.9,
+            "review_count": 128,
+            "colors": [
+                {
+                    "name": "Tím",
+                    "image": "./assets/images/phones/iphone-17-pro-pro-max.avif",
+                    "active": false
+                }
+            ]
+        },
+        {
+            "id": 1004,
+            "name": "iPhone 15 128GB Chính Hãng",
+            "slug": "iphone",
+            "category": "dien-thoai",
+            "brand": "iPhone",
+            "price": 34990000,
+            "sale_price": 34490000,
+            "price_formatted": "34.990.000đ",
+            "sale_price_formatted": "34.490.000đ",
+            "image": "./assets/images/phones/iphone-15.avif",
+            "in_stock": true,
+            "featured": true,
+            "badge": "Mới",
+            "rating": 4.9,
+            "review_count": 128,
+            "colors": [
+                {
+                    "name": "Tím",
+                    "image": "./assets/images/phones/iphone-17-pro-pro-max.avif",
+                    "active": false
+                }
+            ]
+        },
+
+        {
+            "id": 1005,
+            "name": "iPhone 14 Pro Max 256GB Chính Hãng",
+            "slug": "iphone",
+            "category": "dien-thoai",
+            "brand": "iPhone",
+            "price": 34990000,
+            "sale_price": 34490000,
+            "price_formatted": "34.990.000đ",
+            "sale_price_formatted": "34.490.000đ",
+            "image": "./assets/images/phones/iphone-14-pro-pro-max.webp",
+            "in_stock": true,
+            "featured": true,
+            "badge": "Mới",
+            "rating": 4.9,
+            "review_count": 128
+        },
+
+        {
+            "id": 1006,
+            "name": "Samsung Galaxy Z Fold7 5G 256GB Chính Hãng",
+            "slug": "samsung-galaxy-z-fold7-5g",
+            "category": "dien-thoai",
+            "brand": "samsung",
+            "price": 32990000,
+            "sale_price": 28990000,
+            "price_formatted": "32.990.000đ",
+            "sale_price_formatted": "28.990.000đ",
+            "image": "./assets/images/phones/samsung_galaxy_z_fold7_5g.avif",
+            "in_stock": true,
+            "featured": true,
+            "badge": "Giảm sốc",
+            "rating": 4.8,
+            "review_count": 156
+        },
+        {
+            "id": 1007,
+            "name": "Samsung Galaxy S25 Ultra 5G 256GB Chính Hãng",
+            "slug": "samsung-galaxy-s25-ultra-5g",
+            "category": "dien-thoai",
+            "brand": "samsung",
+            "price": 32990000,
+            "sale_price": 28990000,
+            "price_formatted": "32.990.000đ",
+            "sale_price_formatted": "28.990.000đ",
+            "image": "./assets/images/phones/s25_ultra_titan_xanh.avif",
+            "in_stock": true,
+            "featured": true,
+            "badge": "Giảm sốc",
+            "rating": 4.8,
+            "review_count": 156
+        },
+        {
+            "id": 1008,
+            "name": "Samsung Galaxy S25 FE 128GB Chính Hãng",
+            "slug": "samsung-galaxy-s25-fe",
+            "category": "dien-thoai",
+            "brand": "samsung",
+            "price": 32990000,
+            "sale_price": 28990000,
+            "price_formatted": "32.990.000đ",
+            "sale_price_formatted": "28.990.000đ",
+            "image": "./assets/images/phones/samsung_galaxy_s25_fe.avif",
+            "in_stock": true,
+            "featured": true,
+            "badge": "Giảm sốc",
+            "rating": 4.8,
+            "review_count": 156
+        },
+        {
+            "id": 1009,
+            "name": "Samsung Galaxy Z Flip7 256GB Chính Hãng",
+            "slug": "samsung-galaxy-z-flip7",
+            "category": "dien-thoai",
+            "brand": "samsung",
+            "price": 32990000,
+            "sale_price": 28990000,
+            "price_formatted": "32.990.000đ",
+            "sale_price_formatted": "28.990.000đ",
+            "image": "./assets/images/phones/samsung_galaxy_z_flip7_5g.avif",
+            "in_stock": true,
+            "featured": true,
+            "badge": "Giảm sốc",
+            "rating": 4.8,
+            "review_count": 156
+        },
+        {
+            "id": 1010,
+            "name": "Samsung Galaxy A17 5G 128GB Chính Hãng",
+            "slug": "samsung-galaxy-a17-5g",
+            "category": "dien-thoai",
+            "brand": "samsung",
+            "price": 32990000,
+            "sale_price": 28990000,
+            "price_formatted": "32.990.000đ",
+            "sale_price_formatted": "28.990.000đ",
+            "image": "./assets/images/phones/samsung_galaxy_a17.avif",
+            "in_stock": true,
+            "featured": true,
+            "badge": "Giảm sốc",
+            "rating": 4.8,
+            "review_count": 156
+        },
+        {
+            "id": 1011,
+            "name": "Xiaomi 15T 5G Chính Hãng",
+            "slug": "xiaomi-15t-5g",
+            "category": "dien-thoai",
+            "brand": "xiaomi",
+            "price": 12999990,
+            "sale_price": 14999990,
+            "price_formatted": "12.990.000đ",
+            "sale_price_formatted": "14.990.000đ",
+            "image": "./assets/images/phones/xiaomi-15t-5g.avif",
+            "in_stock": true,
+            "featured": true,
+            "badge": "Giảm sốc",
+            "rating": 4.8,
+            "review_count": 15
+        },
+        {
+            "id": 1012,
+            "name": "OPPO Find X9 5G 16GB/512GB Chính Hãng",
+            "slug": "oppo-find-x9-5g-16gb-512gb",
+            "category": "dien-thoai",
+            "brand": "oppo",
+            "price": 25499990,
+            "sale_price": 27499990,
+            "price_formatted": "25.499.990đ",
+            "sale_price_formatted": "27.590.000đ",
+            "image": "./assets/images/phones/xiaomi-15t-5g.avif",
+            "in_stock": true,
+            "featured": true,
+            "badge": "Giảm sốc",
+            "rating": 4.8,
+            "review_count": 15
+        }
+    ]
+}

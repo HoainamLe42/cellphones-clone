@@ -1,0 +1,239 @@
+{
+    "phones": [
+        {
+            "id": 1,
+            "name": "iPhone 14 Pro",
+            "brand": "Apple",
+            "price": 23690000,
+            "sale": true,
+            "discountPercentage": 10,
+            "stock": 25,
+            "sold": 500,
+            "featured": true,
+            "specs": {
+                "screenSize": "6.1 inch",
+                "storage": "128GB",
+                "camera": "12MP",
+                "battery": "3095mAh",
+                "os": "iOS 16"
+            },
+            "colors": [
+                {
+                    "name": "Bạc",
+                    "image": "../assets/image/phones/iphone14pro-silver.webp",
+                    "active": false
+                },
+                {
+                    "name": "Đen",
+                    "image": "../assets/image/phones/iphone14pro-black.webp",
+                    "active": true
+                },
+                {
+                    "name": "Vàng",
+                    "image": "../assets/image/phones/iphone14pro-gold.webp",
+                    "active": false
+                },
+                {
+                    "name": "Tím",
+                    "image": "../assets/image/phones/iphone14pro-purple.webp",
+                    "active": false
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "name": "Samsung Galaxy S23 Ultra",
+            "brand": "Samsung",
+            "price": 23990000,
+            "sale": true,
+            "discountPercentage": 12,
+            "stock": 15,
+            "sold": 350,
+            "featured": false,
+            "specs": {
+                "screenSize": "6.8 inch",
+                "storage": "256GB",
+                "camera": "108MP",
+                "battery": "5000mAh",
+                "os": "Android 13"
+            },
+            "colors": [
+                {
+                    "name": "Đen",
+                    "image": "../assets/image/phones/galaxy-s23ultra-black.webp"
+                },
+                {
+                    "name": "Xanh",
+                    "image": "../assets/image/phones/galaxy-s23ultra-green.webp"
+                },
+
+                {
+                    "name": "Tím",
+                    "image": "../assets/image/phones/galaxy-s23ultra-lavender.webp"
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "name": "Iphone 13",
+            "brand": "Apple",
+            "price": 13700000,
+            "sale": false,
+            "discountPercentage": 0,
+            "stock": 30,
+            "sold": 200,
+            "featured": true,
+            "specs": {
+                "screenSize": "6.1 inch",
+                "storage": "128GB",
+                "camera": "12MP",
+                "battery": "3240mAh",
+                "os": "iOS 15"
+            },
+            "colors": [
+                {
+                    "name": "Đỏ",
+                    "image": "../assets/image/phones/iphone14-red.webp"
+                },
+                {
+                    "name": "Hồng",
+                    "image": "../assets/image/phones/iphone14-pink.webp"
+                },
+                {
+                    "name": "Xanh lá",
+                    "image": "../assets/image/phones/iphone14-green.webp"
+                },
+                {
+                    "name": "Trắng",
+                    "image": "../assets/image/phones/iphone14-white.webp"
+                },
+                {
+                    "name": "Xanh dương",
+                    "image": "../assets/image/phones/iphone14-blue.webp"
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "name": "Samsung Galaxy Z Flip5",
+            "brand": "Samsung",
+            "price": 16490000,
+            "sale": true,
+            "discountPercentage": 15,
+            "stock": 15,
+            "sold": 350,
+            "featured": false,
+            "specs": {
+                "screenSize": "6.7 inch",
+                "storage": "512GB",
+                "camera": "12MP",
+                "battery": "3700mAh",
+                "os": "Android 13"
+            },
+            "colors": [
+                {
+                    "name": "Đen",
+                    "image": "../assets/image/phones/galaxy-zflip5-black.webp"
+                },
+                {
+                    "name": "Xanh",
+                    "image": "../assets/image/phones/galaxy-zflip5-green.webp"
+                },
+
+                {
+                    "name": "Tím",
+                    "image": "../assets/image/phones/galaxy-zflip5-lavender.webp"
+                }
+            ]
+        },
+        {
+            "id": 5,
+            "name": "Xiaomi Redmi Note 13 Pro 4G",
+            "brand": "xiaomi",
+            "price": 6190000,
+            "sale": false,
+            "discountPercentage": 0,
+            "stock": 15,
+            "sold": 350,
+            "featured": false,
+            "specs": {
+                "screenSize": "6.67 inch",
+                "storage": "128GB",
+                "camera": "16MP",
+                "battery": "5000mAh",
+                "os": "Android 13"
+            },
+            "colors": [
+                {
+                    "name": "Đen",
+                    "image": "../assets/image/phones/xiaomi-note-13pro-black.webp"
+                },
+                {
+                    "name": "Xanh",
+                    "image": "../assets/image/phones/xiaomi-note-13pro-green.webp"
+                },
+
+                {
+                    "name": "Tím",
+                    "image": "../assets/image/phones/xiaomi-note-13pro-lavender.webp"
+                }
+            ]
+        },
+        {
+            "id": 6,
+            "name": "OPPO Reno12 F 5G",
+            "brand": "oppo",
+            "price": 9490000,
+            "sale": false,
+            "discountPercentage": 0,
+            "stock": 15,
+            "sold": 123,
+            "featured": true,
+            "specs": {
+                "screenSize": "6.7 inch",
+                "storage": "256GB",
+                "camera": "32MP",
+                "battery": "5000mAh",
+                "os": "Android 14"
+            },
+            "colors": [
+                {
+                    "name": "cam",
+                    "image": "../assets/image/phones/oppo-reno12-orange.webp"
+                },
+                {
+                    "name": "Xanh",
+                    "image": "../assets/image/phones/oppo-reno12-13pro-green.webp"
+                }
+            ]
+        },
+        {
+            "id": 7,
+            "name": "OPPO A58",
+            "brand": "oppo",
+            "price": 5190000,
+            "sale": false,
+            "discountPercentage": 0,
+            "stock": 15,
+            "sold": 80,
+            "featured": true,
+            "specs": {
+                "screenSize": "6.72 inch",
+                "storage": "128GB",
+                "camera": "8MP",
+                "battery": "5000mAh",
+                "os": "Android 13"
+            },
+            "colors": [
+                {
+                    "name": "đen",
+                    "image": "../assets/image/phones/oppo-a58-black.webp"
+                },
+                {
+                    "name": "xanh",
+                    "image": "../assets/image/phones/oppo-a58-green.webp"
+                }
+            ]
+        }
+    ]
+}
