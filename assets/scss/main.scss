@@ -1,0 +1,16 @@
+@import 'variables';
+// @import 'mixins';
+@import 'base';
+@import 'header';
+@import 'footer';
+@import 'home';
+@import 'megaMenu'; // Components
+@import 'feature';
+@import 'productDetail';
+@import 'phones';
+@import 'breadcrumb';
+@import 'sidebar';
+@import 'checkout';
+// @import 'products';
+// GG Font
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');

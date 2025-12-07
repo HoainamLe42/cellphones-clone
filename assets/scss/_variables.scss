@@ -1,0 +1,43 @@
+$primary-color: #d70018;
+$secondary-color: #a8a5a5;
+$third-color: #f35365;
+$text-color: #333;
+$font-main: 'Inter', sans-serif;
+
+$color-cellphone-50: #fbe6e8;
+$color-cellphone-100: #f3b0b7;
+$color-cellphone-200: #ed8a95;
+$color-cellphone-300: #e45464;
+$color-cellphone-500: #d70018;
+
+$color-woodsmoke-100: #f2f2f3;
+$color-woodsmoke-200: #e4e4e7;
+$color-woodsmoke-300: #cfcfd3;
+$color-woodsmoke-400: #a1a1aa;
+
+$color-black-alpha-600: #000000ad;
+
+$color-blue-500: #3b82f6;
+
+@mixin flexCenter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin twoLineText {
+    display: -webkit-box; /* Required for line-clamp to work in WebKit browsers */
+    -webkit-line-clamp: 2; /* Limits the text to 2 lines */
+    -webkit-box-orient: vertical; /* Required with -webkit-line-clamp */
+    overflow: hidden; /* Hides content beyond the clamped lines */
+    text-overflow: ellipsis; /* Adds ellipsis for truncated text */
+}
+
+@mixin boxShadowSection {
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+@mixin hidden {
+    display: none;
+}
