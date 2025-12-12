@@ -1,41 +1,59 @@
+import { getAllProducts } from '../services/api.js';
 import { renderSidebar } from './components/MenuItem.js';
 import { renderProductCard } from './components/ProductCard.js';
 
-export async function loadPhones() {
-    const container = document.querySelector('.phones-body__items');
-    if (!container) return;
-
-    // Call api
-    async function getPhones() {
-        const res = await fetch(`http://localhost:8000/products`);
-        if (!res.ok) throw new Error('Failed to fetch Products');
-        const data = res.json();
-
-        return data;
+class DienThoaiPage {
+    constructor() {
+        this.container = document.querySelector('.phones-body__items');
+        this.init();
     }
-    const phones = await getPhones();
 
-    const html = `
-                    <div class="phones-body__grid">
-                              ${phones
-                                  .map((phone) => renderProductCard(phone))
-                                  .join('')}
-                    </div>
-                    
-          `;
+    async init() {
+        if (!this.container) return;
+        this.showLoading();
 
-    container.innerHTML = html;
+        try {
+            const phones = await getAllProducts();
+            this.render(phones);
+            console.log(phones);
+        } catch (error) {
+            this.showError(error);
+        }
+    }
 
-    container.addEventListener('click', (e) => {
-        const card = e.target.closest('.feature__item');
-        if (!card) return;
+    showLoading() {
+        this.container.innerHTML = `
+            <div class="loading">Đang tải sản phẩm...</div>
+        `;
+    }
 
-        const productId = card.dataset.id;
-    });
+    showError(error) {
+        this.container.innerHTML = `
+            <div class="error">
+                Không thể tải sản phẩm. Vui lòng thử lại sau.<br>
+                <small>${error.message}</small>
+            </div>
+        `;
+    }
+
+    render(phones) {
+        if (!phones || phones.length === 0) {
+            this.container.innerHTML = `
+                <p class="no-products">Hiện chưa có sản phẩm nào.</p>
+            `;
+        }
+
+        const html = `
+            <div class="phones-body__grid">
+                ${phones.map((phone) => renderProductCard(phone)).join('')}
+            </div>
+        `;
+
+        this.container.innerHTML = html;
+    }
 }
 
 document.addEventListener('DOMContentLoaded', async () => {
-    await loadPhones();
-
+    new DienThoaiPage();
     renderSidebar();
 });

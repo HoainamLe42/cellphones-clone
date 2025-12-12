@@ -34,14 +34,14 @@
             <div class="container">
                 <div class="header__bottom">
                     <a href="/" class="logo">cellphone</a>
-                    <button id="header-menu">
+                    <button id="header-menu" class="header-menu">
                         <i class="fa-solid fa-bars"></i>
                         Danh mục
                         <i class="fa-solid fa-angle-down"></i>
                     </button>
-                    <button>
+                    <button class="header-local">
                         <i class="fa-solid fa-location-dot"></i>
-                        Hồ Chí Minh
+                        <span>Hồ Chí Minh</span>
                         <i class="fa-solid fa-angle-down"></i>
                     </button>
                     <div class="header__search">
@@ -53,11 +53,11 @@
                     </div>
 
                     <button class="header__cart">
-                        Giỏ hàng
+                        <span>Giỏ hàng</span>
                         <i class="fa-solid fa-cart-shopping"></i>
                     </button>
 
-                    <button>
+                    <button class="login">
                         Đăng nhập
                         <i class="fa-regular fa-circle-user"></i>
                     </button>
@@ -76,9 +76,7 @@
                         </li>
                         <span>/</span>
                         <li>
-                            <a class="active" href="/oppo.html"
-                                >OPPO</a
-                            >
+                            <a class="active" href="/oppo.html">OPPO</a>
                         </li>
                     </ul>
                 </nav>
@@ -86,7 +84,7 @@
                     <h2 class="heading-h2">Điện Thoại OPPO</h2>
 
                     <!-- List filter -->
-                    <ul class="phones-filter__list">
+                    <ul class="phones-filter__list hide-scrollbar">
                         <li><a href="#!">A Series</a></li>
                         <li><a href="#!">Reno Series</a></li>
                         <li><a href="#!">Find N Series</a></li>
@@ -99,7 +97,7 @@
                 <div class="container">
                     <div class="phones-body__wrapper">
                         <!-- Filter -->
-                        <div class="phones-body__filter">
+                        <div class="phones-body__filter hide-scrollbar">
                             <p>Sắp xếp theo:</p>
                             <ul>
                                 <li class="active">Nổi bật</li>
@@ -191,5 +189,18 @@
 
         <script src="./js/oppos.js" type="module"></script>
         <script src="./js/common.js" type="module"></script>
+        <script>
+            // fetch('https://dummyjson.com/products/category/smartphones')
+            //     .then((res) => res.json())
+            //     .then((data) =>
+            //         console.log(
+            //             data.products.filter(
+            //                 (product) =>
+            //                     product.brand.toLowerCase() ===
+            //                     'apple'.toLowerCase(),
+            //             ),
+            //         ),
+            //     );
+        </script>
     </body>
 </html>

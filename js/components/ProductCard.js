@@ -8,7 +8,7 @@ export function renderProductCard(product) {
                       </div>
                       <div class="feature__item__image">
                           <img
-                              src="${product.image}"
+                              src="${product.thumbnail}"
                               alt=""
                           />
                       </div>
@@ -18,7 +18,7 @@ export function renderProductCard(product) {
                               src="../assets/icons/1759205461232_san_hang.webp"
                               alt=""
                           />
-                          <h4>${product.name}</h4>
+                          <h4>${product.title}</h4>
                           <span class="feature__price--sale">37.790.000 đ</span>
                           <span class="feature__price">37.790.000 đ</span>
                       </div>

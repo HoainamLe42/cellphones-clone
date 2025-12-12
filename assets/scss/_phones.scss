@@ -1,16 +1,20 @@
 .phones {
     margin: 20px 0;
+
     &-filter {
         &__list {
-            margin-top: 20px;
             display: flex;
+            margin-top: 20px;
             gap: 16px;
+            overflow-y: auto;
 
             li a {
                 display: block;
                 padding: 8px;
                 border: 1px solid $color-woodsmoke-100;
                 border-radius: 8px;
+                color: #333;
+                text-wrap: nowrap;
 
                 &:hover {
                     color: $primary-color;
@@ -22,6 +26,7 @@
 
     &-body {
         margin-top: 16px;
+
         &__wrapper {
             @include boxShadowSection;
         }
@@ -32,6 +37,7 @@
             font-size: 14px;
             padding: 8px 16px;
             border-bottom: 1px solid $color-woodsmoke-300;
+            overflow-y: auto;
 
             ul {
                 display: flex;
@@ -77,6 +83,60 @@
                     border-color: $primary-color;
                 }
             }
+        }
+    }
+}
+
+/* ==================== RESPONSIVE ==================== */
+
+/* Tablet: 768px - 1023px */
+@media (max-width: 1023px) {
+    .phones {
+        &-filter {
+            &__list {
+                margin-top: 10px;
+                gap: 8px;
+
+                li a {
+                    font-size: 14px;
+                }
+            }
+        }
+        &-body {
+            margin-top: 10px;
+
+            &__items {
+                padding: 8px;
+            }
+
+            &__grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 8px;
+            }
+
+            &__filter {
+                font-size: 12px;
+
+                ul {
+                    gap: 4px;
+                    margin-left: 6px;
+                }
+
+                
+
+                li,p {
+                text-wrap: nowrap;
+                }
+            }
+        }
+    }
+}
+
+/* Mobile: ≤ 767px */
+@media (max-width: 767px) {
+    .phones {
+        &-body {
+            margin-top: 8px;
         }
     }
 }

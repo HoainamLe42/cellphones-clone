@@ -1,3 +1,5 @@
+export const API_URL = 'https://cors.bridged.cc/https://xy6ww2-8080.csb.app';
+
 // Toggle sidebar
 const headerMenuBtn = document.getElementById('header-menu');
 const sidebar = document.querySelector('#sidebar');

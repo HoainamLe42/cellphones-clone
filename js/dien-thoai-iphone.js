@@ -1,34 +1,58 @@
 import { renderProductCard } from './components/ProductCard.js';
 import { renderSidebar } from './components/MenuItem.js';
+import { getProductsByBrand } from '../services/api.js';
 
-export async function loadIPhones() {
-    const container = document.getElementById('iphones-body__items');
-    if (!container) return;
-
-    // Call api
-    async function getPhones() {
-        const res = await fetch(`http://localhost:8000/products?brand=iPhone`);
-        if (!res.ok) throw new Error('Failed to fetch Products');
-        const data = res.json();
-
-        return data;
+class IPhonePage {
+    constructor() {
+        this.container = document.getElementById('iphones-body__items');
+        this.init();
     }
-    const iphones = await getPhones();
 
-    const html = `
+    showLoading() {
+        this.container.innerHTML = `
+            <div class="loading">Đang tải sản phẩm...</div>
+        `;
+    }
+
+    showError(error) {
+        this.container.innerHTML = `
+            <div class="error">
+                Không thể tải sản phẩm. Vui lòng thử lại sau.<br>
+                <small>${error.message}</small>
+            </div>
+        `;
+    }
+
+    async init() {
+        if (!this.container) return;
+        this.showLoading();
+
+        try {
+            const phones = await getProductsByBrand('Apple');
+            this.render(phones);
+        } catch (error) {
+            this.showError(error);
+        }
+    }
+
+    render(phones) {
+        if (!phones || phones.length === 0) {
+            this.container.innerHTML = `<div class="no-products">Không có sản phẩm nào.</div>`;
+            return;
+        }
+
+        const html = `
                     <div class="phones-body__grid">
-                              ${iphones
+                              ${phones
                                   .map((phone) => renderProductCard(phone))
                                   .join('')}
                     </div>
-                    
           `;
 
-    container.innerHTML = html;
+        this.container.innerHTML = html;
+    }
 }
-
 document.addEventListener('DOMContentLoaded', async () => {
-    await loadIPhones();
-
+    new IPhonePage();
     renderSidebar();
 });

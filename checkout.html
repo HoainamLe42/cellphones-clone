@@ -70,9 +70,7 @@
         <main id="page-content" class="checkout">
             <div class="container">
                 <div class="checkout__wrapper">
-                    <a href="/" class="checkout__nav"
-                        >< Tiếp tục mua hàng</a
-                    >
+                    <a href="/" class="checkout__nav">< Tiếp tục mua hàng</a>
 
                     <div class="checkout-cart">
                         <div class="checkout-cart__img">
@@ -308,7 +306,24 @@
         </div>
         <div class="overlay"></div>
 
-        <script src="./js/product-detail.js" type="module"></script>
         <script src="./js/common.js" type="module"></script>
+        <script>
+            const BASE_URL =
+                'https://dummyjson.com/products/category/smartphones';
+
+            async function getAllProducts() {
+                try {
+                    const res = await fetch(`${BASE_URL}`);
+                    if (!res.ok) throw new Error('Không tải được sản phẩm');
+                    const data = await res.json();
+                    console.log(data);
+                    return data;
+                } catch (error) {
+                    console.error(error);
+                }
+            }
+
+            getAllProducts();
+        </script>
     </body>
 </html>

@@ -17,3 +17,30 @@
         pointer-events: none;
     }
 }
+
+/* ==================== RESPONSIVE ==================== */
+
+/* Tablet: 768px - 1023px */
+@media (max-width: 1023px) {
+    .breadcrumb {
+        &-list {
+            display: flex;
+            gap: 10px;
+        }
+
+        li a {
+            font-size: 12px;
+        }
+
+        li a.active {
+            color: $primary-color;
+            font-weight: 500;
+            user-select: none;
+            pointer-events: none;
+        }
+    }
+}
+
+/* Mobile: ≤ 767px */
+@media (max-width: 767px) {
+}

@@ -142,6 +142,44 @@
 
 /* Mobile: ≤ 767px */
 @media (max-width: 767px) {
+    .feature {
+        &__content {
+            h4 {
+                font-size: 14px;
+            }
+        }
+
+        &__item {
+            flex: 1;
+            min-width: 184px;
+            padding: 10px;
+            border-radius: 8px;
+            overflow: hidden;
+            border: 1px solid $color-woodsmoke-200;
+            transition: all 0.2s ease;
+
+            &__top {
+                display: flex;
+                justify-content: space-between;
+                font-size: 11px;
+
+                span {
+                    font-size: 8px;
+                }
+            }
+
+            &__image {
+                margin-top: 10px;
+                text-align: center;
+                img {
+                    height: 180px;
+                    width: 180px;
+                    object-fit: contain;
+                    transition: all 0.2s ease;
+                }
+            }
+        }
+    }
 }
 
 /* Mobile nhỏ: ≤ 480px */
@@ -149,6 +187,16 @@
     .feature {
         &__wrapper {
             padding: 8px;
+        }
+        &__item {
+            min-width: 130px;
+
+            &__image img {
+                height: auto;
+                width: 149px;
+                object-fit: contain;
+                transition: all 0.2s ease;
+            }
         }
     }
 }
