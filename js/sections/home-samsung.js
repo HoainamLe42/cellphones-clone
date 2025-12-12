@@ -1,3 +1,4 @@
+import { getProductsByBrand } from '../../services/api.js';
 import { renderProductCard } from '../components/ProductCard.js';
 
 export async function loadSamsungSection() {
@@ -10,12 +11,7 @@ export async function loadSamsungSection() {
 
     // Call api
     async function getProducts() {
-        const res = await fetch(
-            `http://localhost:8000/products?brand=samsung&_limit=5`,
-        );
-        if (!res.ok) throw new Error('Failed to fetch Products');
-        const data = res.json();
-
+        const data = await getProductsByBrand('samsung');
         return data;
     }
 
@@ -45,7 +41,7 @@ export async function loadSamsungSection() {
                                     <a href="#!">iPhone 15 Series</a>
                                 </li>
                                 <li>
-                                    <a href="#!">Xem tất cả</a>
+                                    <a href="/samsung.html">Xem tất cả</a>
                                 </li>
                               </ul>
                               </div>
